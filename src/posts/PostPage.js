@@ -5,11 +5,11 @@ export default class componentName extends Component {
     const { data } = this.props
     return (
       <div>
-        <h1>{data.markdownRemark.frontmatter.title}</h1>
-        <span>{data.markdownRemark.frontmatter.date}</span>
+        <h1>{data.contentfulBlogPost.title}</h1>
+        <span>{data.contentfulBlogPost.date}</span>
         <div
           dangerouslySetInnerHTML={{
-            __html: data.markdownRemark.html,
+            __html: data.contentfulBlogPost.body.childMarkdownRemark.html,
           }}
         />
       </div>
@@ -19,12 +19,15 @@ export default class componentName extends Component {
 
 export const query = graphql`
   query BlogPostQuery($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        title
-        date(formatString: "DD MM YYYY")
+    contentfulBlogPost(slug: { eq: $slug }) {
+      title
+      body {
+        childMarkdownRemark {
+          html
+        }
       }
+      slug
+      id
     }
   }
 `
