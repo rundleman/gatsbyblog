@@ -1,0 +1,2 @@
+webpackJsonp([60335399758886],{104:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Gatsby Default Starter",desc:"A new blog"}}},layoutContext:{}}}});
+//# sourceMappingURL=path----284fe0c58552572ff831.js.map

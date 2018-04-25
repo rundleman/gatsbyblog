@@ -1,0 +1,2 @@
+webpackJsonp([0xf72ee5b28802],{330:function(n,t){n.exports={data:{markdownRemark:{html:"<h2>Hello</h2>\n<p>This\nis\na\nnew\npost</p>\n<!-- end -->\n<p>This\nis\na\nnew\npost\nThis\nis\na\nnew\npost</p>",frontmatter:{title:"Welcome to the new blog",date:"21 02 2018"}}},pathContext:{slug:"/posts/post/"}}}});
+//# sourceMappingURL=path---posts-post-c294a4ac616e83ef453b.js.map
